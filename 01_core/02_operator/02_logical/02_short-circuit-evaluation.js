@@ -37,8 +37,7 @@ num % 2 == 0 || console.log('홀수입니다');
 
 var obj = {
     num : 1
-};
-// var val = obj.value;
+};// var val = obj.value;
 
 //obj 가 falsy(undefined or null) 값이면 좌항만 실행
 // obj 가 falsy 이기 때문에 val -> null 데이터 타입 반환(값)
