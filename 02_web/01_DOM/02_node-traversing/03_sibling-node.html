@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>03. 형제 관계 노드 탐색</h1>
+    <ol id="node">
+      <li>previousSibling : 형제 중 이전 형제 노드(요소, 텍스트)탐색</li>
+      <li>nextSibling : 형제 중 자신의 다음 형제 노드(요소, 텍스트)</li>
+    </ol>
+    <script>
+      const $node = document.getElementById("node");
+
+      //   const firstChild = $node.firstChild;
+      const { firstChild } = $node;
+      console.log(firstChild);
+
+      const nextSibling = firstChild.nextSibling;
+      console.log(nextSibling);
+
+      const previousSibling = nextSibling.previousSibling;
+      console.log(previousSibling);
+
+      // 태그 요소 노드만 취득하고 싶으면
+      // previousElementSilbling
+      // nextElementSibling 을 사용하면 된다.
+    </script>
+  </body>
+</html>

@@ -143,3 +143,5 @@ function addWeigth(ohgiraffersArray, weight) {
 const addWeightMember = addWeigth(ohgiraffers, 80);
 
 console.log(addWeightMember);
+
+console.log("===================================");
