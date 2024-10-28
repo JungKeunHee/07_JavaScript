@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .area {
+        background: pink;
+        border: 1px solid black;
+        min-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>01. 마우스 관련 이벤트</h1>
+    <h3>마우스 이벤트 대표적 예시</h3>
+    <ul>
+      <li>mousedown/up</li>
+      <li>mouseover/out</li>
+      <li>mousemove</li>
+      <li>click</li>
+      <li>contextmenu</li>
+    </ul>
+    <hr />
+    <button>클릭</button>
+    <div class="area"></div>
+    <script>
+      const $btn = document.querySelector("button");
+      const $area = document.querySelector(".area");
+
+      //e 객체의 button 프로퍼티 0 : 왼쪽클릭
+      // 1 : 휠 클릭
+      // 2 : 오른쪽 클릭
+      //   $btn.onmousedown = (e) => {
+      //     $area.insertAdjacentHTML(
+      //       "beforeend",
+      //       "mousedown button=" + e.button + "<br>"
+      //     );
+      //   };
+
+      //   $btn.onmouseup = (e) => {
+      //     $area.insertAdjacentHTML(
+      //       "beforeend",
+      //       "mouseup button=" + e.button + "<br>"
+      //     );
+      //   };
+
+      //   $btn.onmouseover = (e) => {
+      //     $area.insertAdjacentHTML(
+      //       "beforeend",
+      //       "mouseover button=" + e.button + "<br>"
+      //     );
+      //   };
+
+      //   $btn.onmouseout = (e) => {
+      //     $area.insertAdjacentHTML(
+      //       "beforeend",
+      //       "mouseout button=" + e.button + "<br>"
+      //     );
+      //   };
+
+      //   $btn.onclick = (e) => {
+      //     $area.insertAdjacentHTML(
+      //       "beforeend",
+      //       "onmouseclick button=" + e.button + "<br>"
+      //     );
+      //   };
+
+      //   $btn.oncontextmenu = (e) => {
+      //     $area.insertAdjacentHTML(
+      //       "beforeend",
+      //       "oncontextmenu button=" + e.button + "<br>"
+      //     );
+      //   };
+    </script>
+  </body>
+</html>
