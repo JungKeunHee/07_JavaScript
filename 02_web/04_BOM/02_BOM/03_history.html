@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>04. history</h1>
+    <pre>
+        history 객체는 말그대로 과거의 기록 등을 가지고 있다
+        브라우저의 세션 기록, 즉 현재 페이지를 불러온 탭 정보
+        혹은 방문 기록을 조작할 수 있는 방법을 제공한다
+    </pre>
+    <button id="btn1">뒤로가기</button>
+    <button id="btn2">앞으로 가기</button>
+    <input type="number" name="page" />
+    <button id="btn3">입력한 만큼 이동하기</button>
+    <button id="btn4">다음 사이트 가기</button>
+    <script>
+      document.getElementById("btn4").onclick = () =>
+        (location.href = "https://www.daum.net");
+
+      for (prop in history) {
+        console.log(`${prop} : ${history[prop]}`);
+      }
+      document.getElementById("btn1").onclick = () => history.back();
+      document.getElementById("btn2").onclick = () => history.forward();
+      document.getElementById("btn3").onclick = () => {
+        let page = document.querySelector("input[type=number]").value;
+        history.go(page);
+      };
+    </script>
+  </body>
+</html>
